@@ -12,12 +12,14 @@ class MainActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
 
-        val numeroString = "42"
-        val numeroInt = numeroString.toInt()
-        val numeroDouble = numeroInt.toDouble()
+        val p = true
+        val q = false
+        val r = true
 
-        println("Int + 10: ${numeroInt + 10}")
-        println("Double + 10.5: ${numeroDouble + 10.5}")
+        println("p AND q: ${p && q}")
+        println("p OR q: ${p || q}")
+        println("NOT p: ${!p}")
+        println("(p OR q) AND r: ${(p || q) && r}")
         }
     }
 

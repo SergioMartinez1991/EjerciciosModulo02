@@ -12,14 +12,11 @@ class MainActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
 
-        val p = true
-        val q = false
-        val r = true
+        val peso = 70.0 // kg
+        val altura = 1.75 // metros
+        val imc = peso / (altura * altura)
 
-        println("p AND q: ${p && q}")
-        println("p OR q: ${p || q}")
-        println("NOT p: ${!p}")
-        println("(p OR q) AND r: ${(p || q) && r}")
+        println("IMC: ${"%.2f".format(imc)}")
         }
     }
 

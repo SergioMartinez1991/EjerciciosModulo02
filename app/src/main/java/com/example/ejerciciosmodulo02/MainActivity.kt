@@ -12,11 +12,14 @@ class MainActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
 
-        val a = 15
-        val b = 20
-        println("a es igual a b: ${a == b}")
-        println("a es mayor que b: ${a > b}")
-        println("b es menor o igual que a: ${b <= a}")
+        val precioOriginal = 100.0
+        val porcentajeDescuento = 20
+        val descuento = precioOriginal * porcentajeDescuento / 100
+        val precioFinal = precioOriginal - descuento
+
+        println("Precio original: $precioOriginal")
+        println("Descuento: $descuento")
+        println("Precio final: $precioFinal")
         }
     }
 

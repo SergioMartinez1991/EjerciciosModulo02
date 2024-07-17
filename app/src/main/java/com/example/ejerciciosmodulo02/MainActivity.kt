@@ -12,23 +12,14 @@ class MainActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
 
-        //Ejercicio 1: Declaración de Variables
-    /*    Declara variables para representar la información de un producto:
+        val num1 = 20
+        val num2 = 6
 
-        Nombre del producto (String)
-        Precio (Double)
-        Disponible en inventario (Boolean)
-        Código de producto (String) Imprime todas las variables.
-*/
-            val nombreProducto: String = "Laptop Gaming"
-            val precio: Double = 1299.99
-            val disponible: Boolean = true
-            val codigoProducto: String = "LPT-001"
-
-            println("Producto: $nombreProducto")
-            println("Precio: $precio")
-            println("Disponible: $disponible")
-            println("Código: $codigoProducto")
+        println("Suma: ${num1 + num2}")
+        println("Resta: ${num1 - num2}")
+        println("Multiplicación: ${num1 * num2}")
+        println("División: ${num1 / num2}")
+        println("Módulo: ${num1 % num2}")
         }
     }
 

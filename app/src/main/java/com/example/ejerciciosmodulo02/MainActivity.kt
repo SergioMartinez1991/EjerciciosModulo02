@@ -12,11 +12,11 @@ class MainActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
 
-        val peso = 70.0 // kg
-        val altura = 1.75 // metros
-        val imc = peso / (altura * altura)
-
-        println("IMC: ${"%.2f".format(imc)}")
+        val str1 = "Hola"
+        val str2 = "Mundo"
+        println("Concatenación: ${str1 + " " + str2}")
+        println("Son iguales: ${str1 == str2}")
+        println("Suma de longitudes: ${str1.length + str2.length}")
         }
     }
 

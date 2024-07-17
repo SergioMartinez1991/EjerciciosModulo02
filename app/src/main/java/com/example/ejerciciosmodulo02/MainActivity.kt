@@ -12,14 +12,9 @@ class MainActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
 
-        val num1 = 20
-        val num2 = 6
-
-        println("Suma: ${num1 + num2}")
-        println("Resta: ${num1 - num2}")
-        println("Multiplicación: ${num1 * num2}")
-        println("División: ${num1 / num2}")
-        println("Módulo: ${num1 % num2}")
+        var contador = 5
+        println("Incremento: ${++contador}")
+        println("Decremento: ${--contador}")
         }
     }
 
